@@ -69,7 +69,6 @@ export const useCart = () => {
     const isEmpty = useMemo( () => cart.length === 0, [cart])
     const cartTotal = useMemo( () => cart.reduce( (total, item ) => total + (item.quantity * item.price), 0), [cart] )
 
-
     return {
        data,
        cart,
